@@ -20,22 +20,23 @@ public class TicTacToe {
 	        	} else {
 	        		lastPlayer = new Character('X');
 	        	}
-	            System.out.println("\n---------");
+	            System.out.println("\n---1-2-3---");
 	            for(int a = 0; a < 3 ; a++){
-	                System.out.print("| ");
+	                System.out.print((a + 1) + "| ");
 	                for(int i = 0; i < 3; i++) {
 	                    System.out.print(gameBoard[holder] + " ");
 	                    holder++;
 	                }
 	                 System.out.print("|\n");
 	            }
-	            System.out.println("---------");
+	            System.out.println("-----------");
 	            int nextRow = 0, nextColumn = 0;
 	            boolean coordinateBoolean = true;
 	            do {
 	            	try {
-	            		System.out.println("Enter the coordinates:");
+	            		System.out.println(lastPlayer.toString() + " enter the row:");
 	            		nextRow = entry.nextInt();
+	            		System.out.println(lastPlayer.toString() + " enter the colum:");
 	            		nextColumn = entry.nextInt();
 	            		if(nextRow > 3 || nextRow < 1 || nextColumn > 3 || nextRow < 1) {
 	            			System.out.println("Coordinates should be from 1 to 3!");
@@ -69,16 +70,16 @@ public class TicTacToe {
 	            		gameBoard[3].equals(lastPlayer) && gameBoard[4].equals(lastPlayer) && gameBoard[5].equals(lastPlayer) ||
 	            		gameBoard[6].equals(lastPlayer) && gameBoard[7].equals(lastPlayer) && gameBoard[8].equals(lastPlayer)) {
 	            	holder = 0;
-	                System.out.println("\n---------");
-	                for(int a = 0; a < 3 ; a++){
-	                    System.out.print("| ");
-	                    for(int i = 0; i < 3; i++) {
-	                        System.out.print(gameBoard[holder] + " ");
-	                        holder++;
-	                    }
-	                     System.out.print("|\n");
-	                }
-	                System.out.println("---------");
+		            System.out.println("\n---1-2-3---");
+		            for(int a = 0; a < 3 ; a++){
+		                System.out.print((a + 1) + "| ");
+		                for(int i = 0; i < 3; i++) {
+		                    System.out.print(gameBoard[holder] + " ");
+		                    holder++;
+		                }
+		                 System.out.print("|\n");
+		            }
+		            System.out.println("-----------");
 	            	System.out.println(lastPlayer + " wins");
 	            	playing = false;
 	            	break;
@@ -86,48 +87,48 @@ public class TicTacToe {
 	            		gameBoard[1].equals(lastPlayer) && gameBoard[4].equals(lastPlayer) && gameBoard[7].equals(lastPlayer) ||
 	            		gameBoard[2].equals(lastPlayer) && gameBoard[5].equals(lastPlayer) && gameBoard[8].equals(lastPlayer)) {
 	            	holder = 0;
-	                System.out.println("\n---------");
-	                for(int a = 0; a < 3 ; a++){
-	                    System.out.print("| ");
-	                    for(int i = 0; i < 3; i++) {
-	                        System.out.print(gameBoard[holder] + " ");
-	                        holder++;
-	                    }
-	                     System.out.print("|\n");
-	                }
-	                System.out.println("---------");
+		            System.out.println("\n---1-2-3---");
+		            for(int a = 0; a < 3 ; a++){
+		                System.out.print((a + 1) + "| ");
+		                for(int i = 0; i < 3; i++) {
+		                    System.out.print(gameBoard[holder] + " ");
+		                    holder++;
+		                }
+		                 System.out.print("|\n");
+		            }
+		            System.out.println("-----------");
 	            	System.out.println(lastPlayer + " wins");
 	            	playing = false;
 	            	break;
 	            } else if(gameBoard[0].equals(lastPlayer) && gameBoard[4].equals(lastPlayer) && gameBoard[8].equals(lastPlayer) ||
 	            		gameBoard[2].equals(lastPlayer) && gameBoard[4].equals(lastPlayer) && gameBoard[6].equals(lastPlayer)) {
 	            	holder = 0;
-	                System.out.println("\n---------");
-	                for(int a = 0; a < 3 ; a++){
-	                    System.out.print("| ");
-	                    for(int i = 0; i < 3; i++) {
-	                        System.out.print(gameBoard[holder] + " ");
-	                        holder++;
-	                    }
-	                     System.out.print("|\n");
-	                }
-	                System.out.println("---------");
+		            System.out.println("\n---1-2-3---");
+		            for(int a = 0; a < 3 ; a++){
+		                System.out.print((a + 1) + "| ");
+		                for(int i = 0; i < 3; i++) {
+		                    System.out.print(gameBoard[holder] + " ");
+		                    holder++;
+		                }
+		                 System.out.print("|\n");
+		            }
+		            System.out.println("-----------");
 	            	System.out.println(lastPlayer + " wins");
 	            	playing = false;
 	            	break;
 	            }
 	            if (moves == 10) {
 	            	holder = 0;
-	                System.out.println("\n---------");
-	                for(int a = 0; a < 3 ; a++){
-	                    System.out.print("| ");
-	                    for(int i = 0; i < 3; i++) {
-	                        System.out.print(gameBoard[holder] + " ");
-	                        holder++;
-	                    }
-	                     System.out.print("|\n");
-	                }
-	                System.out.println("---------");
+		            System.out.println("\n---1-2-3---");
+		            for(int a = 0; a < 3 ; a++){
+		                System.out.print((a + 1) + "| ");
+		                for(int i = 0; i < 3; i++) {
+		                    System.out.print(gameBoard[holder] + " ");
+		                    holder++;
+		                }
+		                 System.out.print("|\n");
+		            }
+		            System.out.println("-----------");
 	            	System.out.println("Draw");
 	            	playing = false;
 	            }
